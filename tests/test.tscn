@@ -18,7 +18,7 @@ prevent_derivative_kick = true
 run_in_editor = true
 controlled_node = NodePath("Marker3D")
 controlled_property = &"position"
-target_value = Vector3(-2.88145, 0, 4.08623)
+target_value = Vector3(0, 0, 0)
 update_method = 1
 script = ExtResource("1_qq2ve")
 

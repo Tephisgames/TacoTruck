@@ -1,7 +1,7 @@
 class_name Taco_Trucker_First_Window
 extends Control
 
-
+@export var taco_rate: int=1
 
 var data:Data=Taco_Trucker.ref.data
 
@@ -25,7 +25,7 @@ func update_label_tacos()->void:
 	##$ is same as getnode
 
 func create_tacos()->void:
-	data.resources.Tacos += 1
+	data.resources.Tacos += taco_rate
 	update_label_tacos()
 
 func _on_button_pressed_tacos()-> void:
