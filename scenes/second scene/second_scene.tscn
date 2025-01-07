@@ -29,7 +29,7 @@ offset_top = 236.0
 offset_right = 406.0
 offset_bottom = 312.0
 text = "Unlock Upgrade
-+1 tacos per click"
++1 taco per click"
 
 [node name="Label" type="Label" parent="Taco_Up_Win/Locked"]
 layout_mode = 0
