@@ -4,3 +4,5 @@ extends Resource
 
 
 @export var resources: DataResources = DataResources.new()
+
+@export var progression :DataProgression=DataProgression.new()

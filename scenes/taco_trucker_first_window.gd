@@ -1,6 +1,8 @@
 class_name Taco_Trucker_First_Window
 extends Control
 
+
+
 var data:Data=Taco_Trucker.ref.data
 
 func _ready()-> void: 
@@ -9,6 +11,12 @@ func _ready()-> void:
 	
 	($Taco_Button as Button).pressed.connect(_on_button_pressed_tacos)
 	##This line connects the button to the pressed function 
+
+
+func _process(delta: float) -> void:
+	update_label_tacos()
+
+
 
 ##func is too call back taco amount and updating this updates all
 func update_label_tacos()->void:

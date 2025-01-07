@@ -1,0 +1,57 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdpsq5sb8n1jg"]
+
+[ext_resource type="Script" path="res://scenes/second scene/second_scene.gd" id="1_vnhuq"]
+
+[node name="Second_Scene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vnhuq")
+
+[node name="Taco_Up_Win" type="TabContainer" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+current_tab = 0
+
+[node name="Locked" type="Control" parent="Taco_Up_Win"]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="Taco_Up_Button" type="Button" parent="Taco_Up_Win/Locked"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 187.0
+offset_top = 236.0
+offset_right = 406.0
+offset_bottom = 312.0
+text = "Unlock Upgrade
++1 tacos per click"
+
+[node name="Label" type="Label" parent="Taco_Up_Win/Locked"]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 184.0
+offset_right = 507.0
+offset_bottom = 385.0
+theme_type_variation = &"HeaderLarge"
+text = "Locked"
+horizontal_alignment = 1
+
+[node name="UnLocked" type="Control" parent="Taco_Up_Win"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="Label" type="Label" parent="Taco_Up_Win/UnLocked"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 177.0
+offset_right = 481.0
+offset_bottom = 405.0
+theme_type_variation = &"HeaderLarge"
+text = "Unlocked"
+horizontal_alignment = 1

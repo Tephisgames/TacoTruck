@@ -1,0 +1,69 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkgp3sh5duer7"]
+
+[ext_resource type="Script" path="res://scenes/Taco_Trucker.gd" id="1_dv8to"]
+[ext_resource type="Script" path="res://scenes/taco_trucker_first_window.gd" id="2_5xnxb"]
+[ext_resource type="PackedScene" uid="uid://cdpsq5sb8n1jg" path="res://scenes/second scene/second_scene.tscn" id="3_xnwud"]
+
+[node name="Taco_TruckerGame" type="Control"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 56.0
+offset_top = 103.0
+offset_right = 56.0
+offset_bottom = 103.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dv8to")
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.127
+anchor_top = 0.135
+anchor_right = 0.127
+anchor_bottom = 0.135
+offset_left = -202.304
+offset_top = -190.48
+offset_right = 949.696
+offset_bottom = 457.52
+current_tab = 1
+
+[node name="First_Scene" type="Control" parent="TabContainer"]
+visible = false
+layout_mode = 2
+script = ExtResource("2_5xnxb")
+metadata/_tab_index = 0
+
+[node name="Taco_Amount" type="Label" parent="TabContainer/First_Scene"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 410.0
+offset_top = 339.0
+offset_right = -474.0
+offset_bottom = -244.0
+theme_type_variation = &"HeaderMedium"
+text = "Tacos: <tacos>"
+horizontal_alignment = 1
+
+[node name="Taco_Button" type="Button" parent="TabContainer/First_Scene"]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -129.0
+offset_top = 100.5
+offset_right = 75.0
+offset_bottom = 177.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Get 1 big Taco"
+
+[node name="Second_Scene" parent="TabContainer" instance=ExtResource("3_xnwud")]
+layout_mode = 2
+metadata/_tab_index = 1
