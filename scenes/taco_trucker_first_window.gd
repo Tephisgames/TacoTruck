@@ -1,10 +1,7 @@
-class_name  FirstScene
+class_name Taco_Trucker_First_Window
 extends Control
 
-
-##Amount of tacos owned by player
-var tacos: int=0
-
+var data:Data=Taco_Trucker.ref.data
 
 func _ready()-> void: 
 	update_label_tacos()
@@ -15,12 +12,12 @@ func _ready()-> void:
 
 ##func is too call back taco amount and updating this updates all
 func update_label_tacos()->void:
-	($Taco_Amount as Label).text = "Tacos : %s"%tacos
+	($Taco_Amount as Label).text = "Tacos : %s"%data.resources.Tacos
 	##renamed nodes and func to match object funtion
-	##$ is same as to getnode
+	##$ is same as getnode
 
 func create_tacos()->void:
-	tacos += 1
+	data.resources.Tacos += 1
 	update_label_tacos()
 
 func _on_button_pressed_tacos()-> void:
