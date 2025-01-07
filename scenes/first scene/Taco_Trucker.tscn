@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://bkgp3sh5duer7"]
+[gd_scene load_steps=5 format=3 uid="uid://bkgp3sh5duer7"]
 
 [ext_resource type="Script" path="res://scenes/Taco_Trucker.gd" id="1_dv8to"]
 [ext_resource type="Script" path="res://scenes/taco_trucker_first_window.gd" id="2_5xnxb"]
 [ext_resource type="PackedScene" uid="uid://cdpsq5sb8n1jg" path="res://scenes/second scene/second_scene.tscn" id="3_xnwud"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0cdcl"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="Taco_TruckerGame" type="Control"]
 custom_minimum_size = Vector2(100, 100)
@@ -29,6 +32,7 @@ offset_left = -202.304
 offset_top = -190.48
 offset_right = 949.696
 offset_bottom = 457.52
+theme_override_styles/panel = SubResource("StyleBoxFlat_0cdcl")
 current_tab = 1
 
 [node name="First_Scene" type="Control" parent="TabContainer"]

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cdpsq5sb8n1jg"]
+[gd_scene load_steps=3 format=3 uid="uid://cdpsq5sb8n1jg"]
 
 [ext_resource type="Script" path="res://scenes/second scene/second_scene.gd" id="1_vnhuq"]
+[ext_resource type="StyleBox" uid="uid://xfik7mpv3vh8" path="res://assets/themes/style_box_flat/new_style_box_flat.tres" id="2_jvmjh"]
 
 [node name="Second_Scene" type="Control"]
 layout_mode = 3
@@ -15,6 +16,7 @@ script = ExtResource("1_vnhuq")
 layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
+theme_override_styles/tabbar_background = ExtResource("2_jvmjh")
 current_tab = 0
 
 [node name="Locked" type="Control" parent="Taco_Up_Win"]

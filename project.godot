@@ -29,6 +29,8 @@ version_control/autoload_on_startup=true
 [file_customization]
 
 folder_colors={
+"res://assets/": "red",
+"res://data_structures/": "yellow",
 "res://scenes/": "green"
 }
 
