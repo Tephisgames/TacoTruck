@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://nx8iacv51adv"]
+
+[ext_resource type="Script" path="res://scenes/singletons/generator/taco_gen.gd" id="1_jbg3e"]
+
+[node name="TacoGen" type="Node"]
+script = ExtResource("1_jbg3e")

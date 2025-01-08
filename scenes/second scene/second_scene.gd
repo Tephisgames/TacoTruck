@@ -14,7 +14,6 @@ func _ready() -> void:
 
 
 
-
 	
 
 ##displays argument of locked or unlocked
@@ -24,7 +23,7 @@ func _display_view(unlocked:bool=false)->void:
 
 ##atempting to unlock logic
 func _try_to_unlock()->void:
-	if Taco_Trucker.ref.data.progression.second_scene_unlocked:
+	if Taco_Trucker.ref.Data.progression.second_scene_unlocked:
 		return
 	
 	if Taco_Trucker.ref.data.resources.Tacos < COST:
@@ -32,6 +31,7 @@ func _try_to_unlock()->void:
 	
 	Taco_Trucker.ref.data.resources.Tacos -= COST
 	Taco_Trucker.ref.data.progression.second_scene_unlocked = true
+	TacoGen.ref.start_generator()
 	
 	_display_view(true)
 
