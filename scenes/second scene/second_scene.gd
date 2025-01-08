@@ -23,7 +23,7 @@ func _display_view(unlocked:bool=false)->void:
 
 ##atempting to unlock logic
 func _try_to_unlock()->void:
-	if Taco_Trucker.ref.Data.progression.second_scene_unlocked:
+	if Taco_Trucker.ref.data.progression.second_scene_unlocked:
 		return
 	
 	if Taco_Trucker.ref.data.resources.Tacos < COST:
