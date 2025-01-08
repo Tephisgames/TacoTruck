@@ -3,25 +3,12 @@
 [ext_resource type="Script" path="res://tests/pid_with_gravity.gd" id="1_qq2ve"]
 
 [node name="PIDController" type="PIDController" node_paths=PackedStringArray("controlled_node")]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-error_integration_limit_enabled = false
-error_integration_decay = 0.1
-control_output_limit = Vector3(0, 0, 0)
 prevent_derivative_kick = true
 run_in_editor = true
+controlled_node = NodePath("Marker3D")
 controlled_property = &"position"
-target_value = Vector3(4.94674, 0, 0.727825)
 update_method = 1
 script = ExtResource("1_qq2ve")
-controlled_node = NodePath("Marker3D")
 
 [node name="Marker3D" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.73682, -0.607247, 2.68988)

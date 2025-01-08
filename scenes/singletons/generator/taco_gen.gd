@@ -38,7 +38,7 @@ func _progress_cycle()->void:
 	if _cycle_progression >= _cycle_duration:
 		_generate()
 
-##restes cycle duration to 0 and adds production to total
+##restes cycle progression to 0 and adds production to total
 func _generate()->void:
 	_cycle_progression -= _cycle_duration
 	
